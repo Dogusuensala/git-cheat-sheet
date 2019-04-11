@@ -16,4 +16,12 @@ log/*.log
 
 To just add parts to the ind we can use `git add -p`(`-p`as in "patch").
 
+## Disaster Recovery
+
+In case of delete commits use `git reflog`and `git cherry-pick` to recover those commits: 
+...
+$ git cherry-pick LOST_COMMIT_SHA1
+...
+
+**NOTE** Will be cleaned up once `git gc`ran
 
